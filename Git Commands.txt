@@ -1,0 +1,4 @@
+git add <file_name> = adds the file to the git, using the -A adds all 		      files from the bashed folder
+git commit -m "<message>" = commits the repo
+git status = shows the status of the repo
+git checkout <file_name> = reverts the file back to its last commited 			   version, using -f does this to all
