@@ -1,0 +1,9 @@
+Git Bash is a unix tool which can be used to track the development of a project. It also can be used as a regular console terminal.
+
+
+git add <file_name> = adds the file to the git, using the -A adds all files from the bashed folder
+git commit -m "<message>" = commits the repo, -a -m " " skips staging
+git status = shows the status of the repo
+git checkout <file_name> = reverts the file back to its last commited version, using -f does this to all
+git log = shows all commits, -p -<n> shows last n number of commits
+git diff = compares the staging area to the working tree and shows what changes were done after the current commit, using "--staged" shows the changes after the last commit
