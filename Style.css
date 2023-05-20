@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(198, 173, 138);
+    font-family: 'Barlow', sans-serif;
+    width: 400px;
+    height: 100vh;
+}
+
+.sidebar nav {
+    padding: 38px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.infoContainer {
+    /* background-color: rgb(255, 0, 140); */
+    height: 55vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Courier Prime', monospace;
+}
+
+.hello {
+    font-size: 40px;
+}
+
+.name {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.moreabout {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+.buttons button {
+    padding: 9px 20px 10px 20px;
+    margin: 0 5px;
+    border-radius: 38px;
+    border-style: none;
+    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+    background-color: rgb(43, 163, 255);
+    color: white;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: white;
+    color: rgb(43, 163, 255);
+}
+
+.devPic img {
+    height: 55vh;
+}
