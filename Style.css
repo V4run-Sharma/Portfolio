@@ -14,7 +14,7 @@
 .sidebar {
     background-color: rgb(198, 173, 138);
     font-family: 'Barlow', sans-serif;
-    width: 400px;
+    width: 200px;
     height: 100vh;
 }
 
@@ -27,12 +27,35 @@
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+    
+}
+.sidebar nav li:hover {
+    background-color: rgb(168, 142, 104);
+    margin-left: -38px;
+    margin-right: -38px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+.sidebar nav li:active {
+    background-color: rgb(153, 120, 70);
+    margin-left: -38px;
+    margin-right: -38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    transition: all 0.15s ease-in;
+    
 }
 .sidebar nav li a {
     text-decoration: none;
     color: black;
 }
-
+.sidebar nav li a:active {
+    text-decoration: none;
+    color: white;
+    transition: all 0.15s ease-in;
+}
 .main {
     /* background-color: yellow; */
     width: 90vw;
@@ -75,25 +98,42 @@
 }
 
 .buttons {
-    margin-top: 34px;
+    margin-top: 24px;
 }
 .buttons button {
-    padding: 9px 20px 10px 20px;
+    padding: 11px 25px 12px 25px;
     margin: 0 5px;
     border-radius: 38px;
-    border-style: none;
-    box-shadow: 2px 2px 5px rgb(187, 187, 187);
+    border-style: solid black 5px;
     background-color: rgb(43, 163, 255);
     color: white;
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 .buttons button:hover {
     background-color: white;
     color: rgb(43, 163, 255);
+    border-style: solid rgb(13, 0, 78) 5px;
 }
 
 .devPic img {
     height: 55vh;
+}
+
+.contactform {
+    font-family: 'Barlow', sans-serif;
+    padding-top: 150px;
+    padding-left: 150px;
+}
+.contactform h1 {
+    font-family: 'Courier Prime', monospace;
+}
+.c1, .c2, .c3, .sbmtform {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.form-label {
+    font-size: 20px;
 }
