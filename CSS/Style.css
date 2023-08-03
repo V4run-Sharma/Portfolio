@@ -116,11 +116,12 @@
     border-style: solid black 20px;
     border-radius: 38px;
     margin: 0 8px;
-    padding: 11px 30px 12px 30px;
+    padding: 11px 30px 8px 30px;
     background-color: rgb(43, 163, 255);
     color: white;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Courier Prime', monospace;
     font-size: 1.5vw;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.25s ease;
 }
@@ -141,14 +142,14 @@
 
 .contactform {
     font-family: 'Barlow', sans-serif;
-    padding-top: 150px;
+    padding-top: 90px;
     padding-left: 150px;
 }
 .contactform h1 {
     font-family: 'Courier Prime', monospace;
     font-size: 2.5vw;
 }
-.c1, .c2, .sbmtform {
+.c0, .c1, .c2, .c3, .sbmtform {
     display: flex;
     flex-direction: column;
 }
@@ -157,7 +158,7 @@
     font-size: 1.5vw;
     margin-top: 20px;
 }
-#clientemail {
+#clientemail, #clientname {
     height: 1.5vw;
     width: 25vw;
     margin: 3px 0px;
@@ -165,7 +166,11 @@
 #clientphn {
     height: 1.5vw;
     width: 10vw;
-    margin: 5px 0px 5px 0px;
+    margin: 4px 0px 5px 0px;
+}
+#clientenq {
+    height: 3vw;
+    width: 25vw;
 }
 #isclient {
     margin-top: 5px;
@@ -182,3 +187,10 @@
 #fcl {
     margin: 3px 5px;
 }
+input:placeholder-shown, textarea:placeholder-shown {
+    font-style: italic;
+    font-weight: bold;
+ }
+ input {
+    padding-right: 3px;
+ }
