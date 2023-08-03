@@ -162,15 +162,19 @@
     height: 1.5vw;
     width: 25vw;
     margin: 3px 0px;
+    padding: 2px 5px 0px 5px;
 }
 #clientphn {
     height: 1.5vw;
     width: 10vw;
     margin: 4px 0px 5px 0px;
+    padding: 2px 5px 0px 5px;
 }
 #clientenq {
+    font-family: "Barlow", sans-serif;
     height: 3vw;
     width: 25vw;
+    padding: 2px 5px;
 }
 #isclient {
     margin-top: 5px;
