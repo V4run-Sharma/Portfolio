@@ -19,7 +19,7 @@
 }
 
 .sidebar nav {
-    padding: 38px;
+    padding: 10px 38px 38px 38px;
 }
 
 .sidebar nav li {
@@ -27,25 +27,24 @@
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    transition: all 0.15s ease-in;
+    transition: all 0.25s ease;
     cursor: pointer;
     text-align: center;
 }
-.sidebar nav li:hover {
+.sidebar nav .sidebaritems:hover {
     background-color: rgb(168, 142, 104);
     margin-left: -38px;
     margin-right: -38px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.sidebar nav li:active {
+.sidebar nav .sidebaritems:active {
     background-color: rgb(153, 120, 70);
     margin-left: -38px;
     margin-right: -38px;
     padding-left: 35px;
     padding-right: 35px;
-    transition: all 0.15s ease-out;
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease;
 }
 .sidebar nav a {
     text-decoration: none;
@@ -53,18 +52,18 @@
 }
 .sidebar nav li:hover {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 24px;
     color: black;
     padding-top: 30px;
     padding-bottom: 30px;
-    transition: all 75ms ease-in-out;
+    transition: all 75ms ease;
 }
 .sidebar nav li:active {
     font-size: x-large;
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    transition: all 0.15s ease-out;
+    transition: all 0.25s ease;
 }
 .main {
     /* background-color: yellow; */
@@ -89,6 +88,7 @@
 
 .hello {
     font-size: 40px;
+    font-weight: lighter;
 }
 
 .name {
@@ -98,34 +98,41 @@
 
 .about {
     font-size: 30px;
+    font-weight: bold;
     margin-top: -5px;
     margin-bottom: 10px;
 }
 
 .moreabout {
     font-family: 'Roboto Slab', serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.buttons {
+.buttons, .sbmtform {
     margin-top: 24px;
+    margin-left: -8px;
 }
-.buttons button {
-    padding: 11px 25px 12px 25px;
-    margin: 0 5px;
+.buttons button, .sbmtform {
+    border-style: solid black 20px;
     border-radius: 38px;
-    border-style: solid black 5px;
+    margin: 0 8px;
+    padding: 11px 30px 12px 30px;
     background-color: rgb(43, 163, 255);
     color: white;
-    font-weight: bold;
     font-family: 'Barlow', sans-serif;
+    font-size: 1.5vw;
     cursor: pointer;
     transition: all 0.25s ease;
 }
-.buttons button:hover {
+.buttons button:hover, .sbmtform {
     background-color: white;
     color: rgb(43, 163, 255);
-    border-style: solid rgb(13, 0, 78) 5px;
+    border-style: solid rgb(13, 0, 78) 20px;
+}
+.buttons button:active, .sbmtform {
+    border-style: solid rgb(13, 0, 78) 20px;
+    background-color: white;
+    color: rgb(13, 0, 78);
 }
 
 .devPic img {
@@ -139,11 +146,39 @@
 }
 .contactform h1 {
     font-family: 'Courier Prime', monospace;
+    font-size: 2.5vw;
 }
-.c1, .c2, .c3, .sbmtform {
-    margin-top: 15px;
-    margin-bottom: 15px;
+.c1, .c2, .sbmtform {
+    display: flex;
+    flex-direction: column;
 }
 .form-label {
-    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+#clientemail {
+    height: 1.5vw;
+    width: 25vw;
+    margin: 3px 0px;
+}
+#clientphn {
+    height: 1.5vw;
+    width: 10vw;
+    margin: 5px 0px 5px 0px;
+}
+#isclient {
+    margin-top: 5px;
+    height: 1.2vw;
+    width: 1.2vw;
+}
+.mb-3-form-check {
+    display: flex;
+    flex-direction: row;
+}
+#emailHelp {
+    color: gray;
+}
+#fcl {
+    margin: 3px 5px;
 }

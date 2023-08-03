@@ -13,11 +13,11 @@
         <div class="sidebar">
             <nav>
                 <ul>
-                    <a href="Index.html"><li>Home</li></a>
-                    <a href="myintro.html"><li>My Intro</li></a>
-                    <a href="services.html"><li>Services</li></a>
-                    <a href="blog.html"><li>Blog</li></a>
-                    <a href=""><li>Contact Me</li></a>
+                    <div class="sidebaritems"><a href="Index.html"><li>Home</li></a></div>
+                    <div class="sidebaritems"><a href="myintro.html"><li>My Intro</li></a></div>
+                    <div class="sidebaritems"><a href="services.html"><li>Services</li></a></div>
+                    <div class="sidebaritems"><a href="blog.html"><li>Blog</li></a></div>
+                    <div class="sidebaritems"><a href=""><li>Contact Me</li></a></div>
                 </ul>
             </nav>
         </div>
@@ -26,20 +26,20 @@
                 <h1>Contact me for work/general enquiries</h1>
                 <form>
                     <div class="c1">
-                        <label for="clientemail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                        <label for="clientemail" class="form-label">E-mail address:</label>
+                        <input type="email" class="form-control" id="clientemail">
                         <div id="emailHelp" class="form-text">We'll never share your email or phone with anyone else.</div>
                     </div>
                     <div class="c2">
                         <label for="clientphn" class="form-label">Phone</label>
                         <input type="phone" class="form-control" id="clientphn">
                     </div>
-                    <div class="mb-3 form-check">
+                    <div class="mb-3-form-check">
                         <input type="checkbox" class="form-check-input" id="isclient">
-                        <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                        <label class="form-check-label" for="isclient" id="fcl">I want you to work on a project with me</label>
                     </div>
-                    <div>
-                        <button type="button" onclick="submitted()" class="sbmtform">  Submit  </button>
+                    <div class="buttons">
+                        <button type="button" onclick="submitted()" class="sbmtform">Submit</button>
                     </div>
                     
                   </form>
