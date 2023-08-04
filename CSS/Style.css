@@ -6,29 +6,26 @@
     padding: 0;
     margin: 0;
 }
-
 .container {
     display: flex;
 }
+
 
 .sidebar {
     background-color: rgb(198, 173, 138);
     font-family: 'Barlow', sans-serif;
     width: 200px;
     height: 100vh;
-    transition: transform 300ms ease-in;
-    /* position: fixed; */
-    /* margin-right: 500px; */
+    transition: transform 300ms ease-out;
+    position: absolute;
 }
 .sidebarGo {
     transform: translate(-200px, 0px);
     position: absolute;
 }
-
 .sidebar nav {
     padding: 45px 38px 38px 38px;
 }
-
 .sidebar nav li {
     list-style: none;
     font-size: 20px;
@@ -72,10 +69,26 @@
     color: white;
     transition: all 0.25s ease;
 }
+
+
 .main {
     /* background-color: yellow; */
     width: 90vw;
 }
+.ham {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 15px
+}
+.cross {
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    left: 17.1px;
+    /* display: none; */
+}
+
 
 .infoContainer {
     /* background-color: rgb(255, 0, 140); */
@@ -86,38 +99,32 @@
     display: flex;
     justify-content: space-around;
 }
-
 .devInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Courier Prime', monospace;
 }
-
 .hello {
     font-size: 40px;
     font-weight: lighter;
 }
-
 .name {
     font-size: 54px;
     font-weight: bold;
 }
-
 .about {
     font-size: 30px;
     font-weight: bold;
     margin-top: -5px;
     margin-bottom: 10px;
 }
-
 .moreabout {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     width: fit-content;
     margin-right: 0px;
 }
-
 .buttons, .sbmtform {
     margin-top: 24px;
     margin-left: -8px;
@@ -145,12 +152,12 @@
     background-color: white;
     color: rgb(13, 0, 78);
 }
-
 .devPic img {
     height: 400px;
     margin-top: 2vh;
     margin-left: 25px;
 }
+
 
 .contactform {
     font-family: 'Barlow', sans-serif;
@@ -210,6 +217,7 @@ input {
     padding-right: 3px;
 }
  
+
 .blogContainer {
     padding: 90px 120px 90px 120px;
 }
@@ -228,11 +236,9 @@ input {
     margin-bottom: -10px;
     font-size: 17.5px;
 }
+
+
 @media (max-width: 768px) {
-    .sidebar {
-        transform: translate(-200px, 0px);
-        position: absolute;
-    }
     .infoContainer {
         flex-wrap: wrap;
         margin-top: 20px;
@@ -279,22 +285,15 @@ input {
         width: 70vw;
     }
     .contactform {
-        margin-left: 20px;
+        margin-left: 30px 20px 20px 20px ;
     }
     .devPic img {
         height: 101vw;
     }
-}
-.ham {
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    left: 15px
-}
-.cross {
-    position: absolute;
-    cursor: pointer;
-    top: 12px;
-    left: 17.1px;
-    /* display: none; */
+    .hello {
+        font-size: 30px;
+    }
+    .name {
+        font-size: 50px;
+    }
 }
