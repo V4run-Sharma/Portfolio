@@ -16,6 +16,7 @@
     font-family: 'Barlow', sans-serif;
     width: 200px;
     height: 100vh;
+    transition: transform 300ms ease-in;
     /* position: fixed; */
     /* margin-right: 500px; */
 }
@@ -158,7 +159,7 @@
 }
 .contactform h1 {
     font-family: 'Courier Prime', monospace;
-    font-size: 3.5vw;
+    font-size: 50px;
 }
 .c0, .c1, .c2, .c3, .sbmtform {
     display: flex;
@@ -228,10 +229,10 @@ input {
     font-size: 17.5px;
 }
 @media (max-width: 768px) {
-    /* .sidebar {
+    .sidebar {
         transform: translate(-200px, 0px);
         position: absolute;
-    } */
+    }
     .infoContainer {
         flex-wrap: wrap;
         margin-top: 20px;
@@ -259,6 +260,7 @@ input {
         font-size: 30px;
     }
     .blogContainer {
+        margin-top: 25px;
         padding: 25px;
     }
     .blogContainer h1 {
@@ -283,16 +285,16 @@ input {
         height: 101vw;
     }
 }
-#ham {
+.ham {
     position: absolute;
     cursor: pointer;
     top: 10px;
     left: 15px
 }
-#cross {
+.cross {
     position: absolute;
     cursor: pointer;
     top: 12px;
     left: 17.1px;
-    display: none;
+    /* display: none; */
 }
