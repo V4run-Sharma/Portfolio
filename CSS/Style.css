@@ -218,25 +218,27 @@ input {
 }
  
 
-.blogContainer {
+.blogContainer, .introContainer {
     padding: 90px 120px 90px 120px;
 }
-.blogContainer h1 {
+.blogContainer h1, .introContainer h1 {
     font-family: 'Courier Prime', monospace;
     font-size: 50px;
     margin-bottom: 20px;
 }
-.blogItem h2 {
+.blogItem h2, .introItem h2 {
     font-family: 'Roboto Slab', serif;
     margin-top: 20px;
 }
-.blogItem p {
+.blogItem p, .introItem p {
     font-family: 'Barlow', sans-serif;
     margin-top: 10px;
     margin-bottom: -10px;
     font-size: 17.5px;
 }
-
+#skillBars {
+    height: 300px;
+}
 
 @media (max-width: 768px) {
     .infoContainer {
@@ -265,19 +267,22 @@ input {
     .contactform h1 {
         font-size: 30px;
     }
-    .blogContainer {
+    .blogContainer, .introContainer {
         margin-top: 25px;
         padding: 25px;
     }
-    .blogContainer h1 {
+    .blogContainer h1, .introContainer h1 {
         font-size: 35px;
         font-weight: bold;
     }
-    .blogContainer h2 {
+    .blogItem h2, .introItem h2 {
         font-size: 20px;
     }
-    .blogContainer p {
+    .blogItem p, .introItem p {
         font-size: 15px;
+    }
+    #skillBars {
+        height: 43vw;
     }
 }
 @media (max-width: 490px) {
