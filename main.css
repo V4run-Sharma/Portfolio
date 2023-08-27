@@ -1,304 +1,325 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .container {
-    display: flex;
+  display: flex;
 }
-
 
 .sidebar {
-    background-color: rgb(198, 173, 138);
-    font-family: 'Barlow', sans-serif;
-    width: 200px;
-    height: 100vh;
-    transition: transform 300ms ease-out;
-    position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgb(198, 173, 138);
+  font-family: "Barlow", sans-serif;
+  width: 200px;
+  height: 28vh;
+  border: 1px solid rgb(198, 173, 138);
+  border-radius: 10px;
+  transition: transform 300ms ease-out;
+  position: absolute;
 }
 .sidebarGo {
-    transform: translate(-200px, 0px);
-    position: absolute;
+  transform: translate(-210px, 0px);
+  position: absolute;
 }
 .sidebar nav {
-    padding: 45px 38px 38px 38px;
+  padding: 8px 38px 8px 38px;
 }
 .sidebar nav li {
-    list-style: none;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: all 0.25s ease;
-    cursor: pointer;
-    text-align: center;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  text-align: center;
 }
 .sidebar nav .sidebaritems:hover {
-    background-color: rgb(168, 142, 104);
-    margin-left: -38px;
-    margin-right: -38px;
-    padding-left: 0px;
-    padding-right: 0px;
+  background-color: rgb(168, 142, 104);
+  margin-left: -38px;
+  margin-right: -38px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .sidebar nav .sidebaritems:active {
-    background-color: rgb(153, 120, 70);
-    margin-left: -38px;
-    margin-right: -38px;
-    padding-left: 35px;
-    padding-right: 35px;
-    transition: all 0.25s ease;
+  background-color: rgb(153, 120, 70);
+  margin-left: -38px;
+  margin-right: -38px;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: all 0.25s ease;
 }
 .sidebar nav a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .sidebar nav li:hover {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    transition: all 75ms ease;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 75ms ease;
 }
 .sidebar nav li:active {
-    font-size: x-large;
-    font-weight: bolder;
-    text-decoration: none;
-    color: white;
-    transition: all 0.25s ease;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  transition: all 0.25s ease;
 }
-
 
 .main {
-    /* background-color: yellow; */
-    width: 90vw;
+  /* background-color: yellow; */
+  width: 90vw;
 }
 .ham {
-    position: absolute;
-    cursor: pointer;
-    top: 10px;
-    left: 15px
+  position: absolute;
+  cursor: pointer;
+  top: 12px;
+  left: 15px;
 }
 .cross {
-    position: absolute;
-    cursor: pointer;
-    top: 12px;
-    left: 17.1px;
-    /* display: none; */
+  position: absolute;
+  cursor: pointer;
+  top: 14px;
+  left: 17.1px;
+  /* display: none; */
 }
-
 
 .infoContainer {
-    /* background-color: rgb(255, 0, 140); */
-    height: 55vh;
-    width: 80vw;
-    padding: 23px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: space-around;
+  /* background-color: rgb(255, 0, 140); */
+  height: 55vh;
+  width: 80vw;
+  padding: 23px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
 }
 .devInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Courier Prime', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Courier Prime", monospace;
 }
 .hello {
-    font-size: 40px;
-    font-weight: lighter;
+  font-size: 40px;
+  font-weight: lighter;
 }
 .name {
-    font-size: 54px;
-    font-weight: bold;
+  font-size: 54px;
+  font-weight: bold;
 }
 .about {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: -5px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }
 .moreabout {
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    width: fit-content;
-    margin-right: 0px;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  width: fit-content;
+  margin-right: 0px;
 }
-.buttons, .sbmtform {
-    margin-top: 24px;
-    margin-left: -8px;
+.buttons,
+.sbmtform {
+  margin-top: 24px;
+  margin-left: -8px;
 }
-.buttons button, .sbmtform {
-    border-style: solid black 20px;
-    border-radius: 38px;
-    margin: 0 8px;
-    padding: 9px 17px 6.5px 17px;
-    background-color: rgb(43, 163, 255);
-    color: white;
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.25s ease;
+.buttons button,
+.sbmtform {
+  border-style: solid black 20px;
+  border-radius: 38px;
+  margin: 0 8px;
+  padding: 9px 17px 6.5px 17px;
+  background-color: rgb(43, 163, 255);
+  color: white;
+  font-family: "Courier Prime", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
-.buttons button:hover, .sbmtform {
-    background-color: white;
-    color: rgb(43, 163, 255);
-    border-style: solid rgb(13, 0, 78) 20px;
+.buttons button:hover,
+.sbmtform {
+  background-color: white;
+  color: rgb(43, 163, 255);
+  border-style: solid rgb(13, 0, 78) 20px;
 }
-.buttons button:active, .sbmtform {
-    border-style: solid rgb(13, 0, 78) 20px;
-    background-color: white;
-    color: rgb(13, 0, 78);
+.buttons button:active,
+.sbmtform {
+  border-style: solid rgb(13, 0, 78) 20px;
+  background-color: white;
+  color: rgb(13, 0, 78);
 }
 .devPic img {
-    height: 400px;
-    margin-top: 2vh;
-    margin-left: 25px;
+  height: 400px;
+  margin-top: 2vh;
+  margin-left: 25px;
 }
-
 
 .contactform {
-    font-family: 'Barlow', sans-serif;
-    padding-top: 6vw;
-    padding-left: 8vw;
+  font-family: "Barlow", sans-serif;
+  padding-top: 6vw;
+  padding-left: 8vw;
 }
 .contactform h1 {
-    font-family: 'Courier Prime', monospace;
-    font-size: 50px;
+  font-family: "Courier Prime", monospace;
+  font-size: 50px;
 }
-.c0, .c1, .c2, .c3, .sbmtform {
-    display: flex;
-    flex-direction: column;
+.c0,
+.c1,
+.c2,
+.c3,
+.sbmtform {
+  display: flex;
+  flex-direction: column;
 }
 .form-label {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5vw;
-    margin-top: 20px;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5vw;
+  margin-top: 20px;
 }
-#clientemail, #clientname {
-    height: 25px;
-    width: 400px;
-    margin: 3px 0px;
-    padding: 2px 5px 0px 5px;
+#clientemail,
+#clientname {
+  height: 25px;
+  width: 400px;
+  margin: 3px 0px;
+  padding: 2px 5px 0px 5px;
 }
 #clientphn {
-    height: 25px;
-    width: 175px;
-    margin: 4px 0px 5px 0px;
-    padding: 2px 5px 0px 5px;
+  height: 25px;
+  width: 175px;
+  margin: 4px 0px 5px 0px;
+  padding: 2px 5px 0px 5px;
 }
 #clientenq {
-    font-family: "Barlow", sans-serif;
-    height: 50px;
-    width: 400px;
-    padding: 2px 5px;
+  font-family: "Barlow", sans-serif;
+  height: 50px;
+  width: 400px;
+  padding: 2px 5px;
 }
 #isclient {
-    margin-top: 5px;
-    height: 17px;
-    width: 17px;
+  margin-top: 5px;
+  height: 17px;
+  width: 17px;
 }
 .mb-3-form-check {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 #emailHelp {
-    color: gray;
+  color: gray;
 }
 #fcl {
-    margin: 3px 5px;
+  margin: 3px 5px;
 }
-input:placeholder-shown, textarea:placeholder-shown {
-    font-style: italic;
+input:placeholder-shown,
+textarea:placeholder-shown {
+  font-style: italic;
 }
 input {
-    padding-right: 3px;
+  padding-right: 3px;
 }
- 
 
-.blogContainer, .introContainer {
-    padding: 90px 120px 90px 120px;
+.blogContainer,
+.introContainer {
+  padding: 90px 120px 90px 120px;
 }
-.blogContainer h1, .introContainer h1 {
-    font-family: 'Courier Prime', monospace;
-    font-size: 50px;
-    margin-bottom: 20px;
+.blogContainer h1,
+.introContainer h1 {
+  font-family: "Courier Prime", monospace;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
-.blogItem h2, .introItem h2 {
-    font-family: 'Roboto Slab', serif;
-    margin-top: 20px;
+.blogItem h2,
+.introItem h2 {
+  font-family: "Roboto Slab", serif;
+  margin-top: 20px;
 }
-.blogItem p, .introItem p {
-    font-family: 'Barlow', sans-serif;
-    margin-top: 10px;
-    margin-bottom: -10px;
-    font-size: 17.5px;
+.blogItem p,
+.introItem p {
+  font-family: "Barlow", sans-serif;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  font-size: 17.5px;
 }
 #skillBars {
-    height: 300px;
+  height: 300px;
 }
 
 @media (max-width: 768px) {
-    .infoContainer {
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-    .devPic {
-        margin: 25px;
-    }
-    .devPic img {
-        height: 500px;
-    }
-    #contme {
-        margin-top: 10px;
-    }
-    .contactform {
-        margin: 20px;
-        padding: 20px;
-    }
-    .form-label {
-        font-size: 20px;
-    }
-    .form-text, #fcl {
-        font-size: 15px;
-    }
-    .contactform h1 {
-        font-size: 30px;
-    }
-    .blogContainer, .introContainer {
-        margin-top: 25px;
-        padding: 25px;
-    }
-    .blogContainer h1, .introContainer h1 {
-        font-size: 35px;
-        font-weight: bold;
-    }
-    .blogItem h2, .introItem h2 {
-        font-size: 20px;
-    }
-    .blogItem p, .introItem p {
-        font-size: 15px;
-    }
-    #skillBars {
-        height: 43vw;
-    }
+  .infoContainer {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .devPic {
+    margin: 25px;
+  }
+  .devPic img {
+    height: 500px;
+  }
+  #contme {
+    margin-top: 10px;
+  }
+  .contactform {
+    margin: 20px;
+    padding: 20px;
+  }
+  .form-label {
+    font-size: 20px;
+  }
+  .form-text,
+  #fcl {
+    font-size: 15px;
+  }
+  .contactform h1 {
+    font-size: 30px;
+  }
+  .blogContainer,
+  .introContainer {
+    margin-top: 25px;
+    padding: 25px;
+  }
+  .blogContainer h1,
+  .introContainer h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .blogItem h2,
+  .introItem h2 {
+    font-size: 20px;
+  }
+  .blogItem p,
+  .introItem p {
+    font-size: 15px;
+  }
+  #skillBars {
+    height: 43vw;
+  }
 }
 @media (max-width: 490px) {
-    #clientemail, #clientname, #clientphn, #clientenq {
-        width: 70vw;
-    }
-    .contactform {
-        margin-left: 30px 20px 20px 20px ;
-    }
-    .devPic img {
-        height: 101vw;
-    }
-    .hello {
-        font-size: 30px;
-    }
-    .name {
-        font-size: 50px;
-    }
+  #clientemail,
+  #clientname,
+  #clientphn,
+  #clientenq {
+    width: 70vw;
+  }
+  .contactform {
+    margin-left: 30px 20px 20px 20px;
+  }
+  .devPic img {
+    height: 101vw;
+  }
+  .hello {
+    font-size: 30px;
+  }
+  .name {
+    font-size: 50px;
+  }
 }
